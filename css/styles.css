@@ -1,4 +1,4 @@
-/* Colors
+/* Variables
    ========================================================================== */
 :root {
   --main-bg-color: #FFFFFF;
@@ -139,13 +139,18 @@ nav ul li a:hover {
   background-color: var(--booking-dark-blue);
   color: var(--main-bg-color);
   border-radius: 2em;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   text-align: center;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
   transition: all 0.2s;
   cursor: pointer;
 }
 
 .booking__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -188,7 +193,9 @@ nav ul li a:hover {
 
 .button__wrapper {
   position: absolute;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .button__container {
