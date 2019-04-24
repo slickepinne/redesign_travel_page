@@ -168,6 +168,12 @@ nav ul li a:hover {
   color: var(--booking-light-blue);
 }
 
+#logo a:hover {
+  font-family: var(--main-font);
+  background-color: transparent;
+  padding: 0;
+}
+
 /* Left site
   ========================================================================== */
 
